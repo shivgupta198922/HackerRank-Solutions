@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int t, m, n;
+    scanf("%d", &t);
+    while(t--) {
+        scanf("%d %d", &m, &n);
+        int i = m % 4;
+        int j = n % 4;
+        if ((i == 1 || i == 2) && (j == 1 || j == 2)) {
+            printf("Second\n");
+        } else {
+            printf("First\n");
+        }
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
