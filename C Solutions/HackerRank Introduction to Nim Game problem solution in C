@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int g;
+    scanf("%d", &g);
+    for (int x = 0; x < g; x++){
+        int n, sum = 0;
+        scanf("%d", &n);
+        int s;
+        for (int y = 0; y < n; y++){
+            scanf("%d", &s);
+            sum = sum ^ s;
+        }
+        if (sum == 0){
+            printf("Second\n");
+        }
+        else {
+            printf("First\n");
+        }
+    }
+    return 0;
+}
